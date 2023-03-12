@@ -674,7 +674,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .nav__list {
@@ -685,6 +685,10 @@ a {
 .nav__item {
     padding: 0.5rem 2rem;
     border-bottom: 1px solid #222;
+}
+
+.nav__item:last-of-type {
+    border-bottom: none;
 }
 
 .nav__item > a {
@@ -710,6 +714,7 @@ a {
 
 .nav__brand {
     transform: translateY(5px);
+    width: 150px;
 }
 
 @media screen and (min-width: 768px) {
@@ -740,13 +745,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
-        padding-top: 0;
-    }
-
     .hero__content {
         text-align: left;
         align-self: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        padding-top: 0;
     }
 }
 
